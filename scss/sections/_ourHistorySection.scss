@@ -1,0 +1,37 @@
+.ourHistorySection{
+    height: 724px;
+    @include centerGrid;
+}
+.ourHistory{
+    @include centerFlexBox;
+    flex-direction: row;
+    &__image{
+        width: 50%;
+    }
+    &__text{
+        margin-right: 170px;
+    }
+}
+@media only screen and(max-width: 1150px){
+    .ourHistory{
+        text-align: center;
+        flex-direction: column-reverse;
+        &__text{
+            margin-right: 0;
+        }
+    }
+}
+@media only screen and(min-width:100px) and(max-width:478px){
+    .ourHistorySection{
+        height: 550px;
+    }
+}
+@media only screen and(min-width:479px) and(max-width:768px){
+    .ourHistorySection{
+        height: 700px;
+    }
+}
+@media only screen and(min-width:769px) and(max-width:1149px){
+    .ourHistorySection{
+    }
+}

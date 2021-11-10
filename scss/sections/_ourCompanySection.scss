@@ -1,0 +1,37 @@
+.ourCompanySection{
+    height: 806px;
+    @include centerGrid;
+}
+.ourCompany{
+    @include centerFlexBox;
+    &__image{
+        width: 50%;
+    }
+    &__text{
+        margin-left: 180px;
+    }
+}
+@media only screen and(max-width:1150px){
+    .ourCompany{
+        display: block;
+        text-align: center;
+        &__text{
+            margin: 0;
+        }
+    }
+}
+@media only screen and(min-width:100px) and(max-width:768px){
+    .ourCompanySection{
+        height: 472px;
+    }
+    .ourCompany{
+        .textBoxLarge{
+            display: none;
+        }
+    }
+}
+@media only screen and(min-width:479px) and(max-width:768px){
+    .ourCompanySection{
+        height: 550px;
+    }
+}

@@ -1,0 +1,33 @@
+.lookingForABusinessSection{
+    background: $light_orange2;
+    height: 90px;
+    @include centerGrid;
+}
+.lookingForABusiness{
+    @include centerFlexBox;
+    &__heading{
+        color: $white_color;
+        font-weight: normal;
+        margin: 0 50px;
+        font-size: 24px;
+    }
+    .button{
+        margin: 0 100px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .lookingForABusinessSection{
+        height: 170px;
+    }
+    .lookingForABusiness{
+        display: block;
+        text-align: center;
+        &__heading{
+            margin: 15px 5px;
+            font-size: 21px;
+        }
+        .button{
+            margin: 0;
+        }
+    }
+}

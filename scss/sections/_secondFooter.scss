@@ -1,0 +1,33 @@
+.secondFooter{
+    background: $gray9;
+    height: 88px;
+    @include centerFlexBox;
+}
+.second_footer{
+    display: flex;
+    .copyRightForResponsive{
+        display: none;
+    }
+    .footer{
+        &__text{
+            margin-left: auto;
+            &--link{
+                margin-left: 25px;
+            }
+        }
+        .copyRight{
+            margin-right: auto;
+        }
+    }
+    @media only screen and(max-width:1150px) {
+        display: block;
+        .copyRightForResponsive{
+            display: block;
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+        .copyRight{
+            display: none;
+        }
+    }
+}

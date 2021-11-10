@@ -1,0 +1,63 @@
+.ourWorkSection{
+    height: 518px;
+    @include centerGrid;
+}
+.ourWork{
+    text-align: center;
+    @include centerGrid;
+    .textBoxOurWork{
+        max-width: 620px;
+        margin: 20px 0 50px 0;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+    .content{
+        margin: 0 50px;
+        &__title{
+            margin: 15px 0;
+            font-size: 19px;
+        }
+        &__text{
+            width: 220px;
+            margin-top: 10px;
+        }
+    }
+}
+@media only screen and(max-width: 1150px){
+    .ourWork{
+        .row{
+            flex-direction: column;
+        }
+    }
+}
+@media only screen and(min-width:100px) and(max-width:768px){
+    .ourWorkSection{
+        height: 700px;
+    }
+    .ourWork{
+        h2{
+            margin: 0 20px;
+        }
+        .textBoxOurWork{
+            display: none;
+        }
+        .content{
+            margin: 5px;
+            &__title{
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media only screen and(min-width:479px) and(max-width:768px){
+    .ourWorkSection{
+        height: 800px;
+    }
+}
+@media only screen and(min-width:769px) and(max-width:1149px){
+    .ourWorkSection{
+        height: 900px;
+    }
+}

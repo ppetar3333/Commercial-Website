@@ -1,0 +1,95 @@
+.firstNav{
+    background-color: $nav1;
+    height: 97px;
+    @include centerFlexBox;
+    .container{
+        display: flex;
+    }
+    &__location{
+        margin-right: auto;
+    }
+    &__info{
+        margin-left: auto;
+        display: flex;
+    }
+    &__image{
+        padding: 0 3px;
+    }
+    &__mobileNumber, &__openTime{
+        padding: 0 8px;
+    }
+    @media only screen and(max-width:1150px){
+        display: none;
+    }
+}
+.secondNav{
+    text-transform: uppercase;
+    height: 152px;
+    @include centerFlexBox;
+    .container{
+        display: flex;
+    }
+    .menuOpen{
+        display: flex;
+        top: 0;
+    }
+    .menuClose{
+        top: -70vh;
+    }
+    &__closeNav, &__openNav{
+        display: none;
+    }
+    &__item{
+        display: inline-block;
+        margin-left: 35px;
+        font-weight: bold;
+    }
+    &__link{
+        color: $black2;
+        font-size: 14px;
+        &--active, &:hover{
+            color: $orange2;
+        }
+    }
+    &__logo{
+        margin-right: auto;
+    }
+    &__containerNav{
+        margin-left: auto;
+    }
+    @media only screen and(max-width: 1050px){
+        height: 80px;
+        &__openNav, &__closeNav{
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 25px;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        &__logo{
+            position: absolute;
+            top: 25px;
+            left: 30px;
+            width: 220px;
+        }
+        &__list{
+            height: 70vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: $nav2;
+            display: none;
+        }
+        &__item{
+            margin: 20px 0;
+        }
+    }
+}

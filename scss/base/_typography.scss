@@ -1,0 +1,112 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+button,input{
+    font-family: $openSans;
+}
+.textBoxResponsive{
+    display: none;
+}
+.textBox{
+    font-size: 14px;
+    color: $gray8;
+    line-height: 25px;
+    margin: 40px 0px;
+    &--darker{
+        color: $black3;
+    }
+    &--white{
+        color: $white_color4;
+    }
+}
+.textBoxNumbers{
+    color: $dark_brown;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.number{
+    &__h3{
+        font-family: $quickSand;
+    }
+}
+.readyToStart{
+    &--heading{
+        font-family: $nunito;
+    }
+}
+.heading{
+    &--h1, &--h2{
+        color: $blue1;
+        font-size: 42px;
+    }
+    &--h1{
+        font-size: 42px;
+    }
+    &--h2{
+        margin: 15px 0;
+    }
+    &--h3{
+        text-transform: uppercase;
+        color: $gray4;
+        font-size: 17px;
+        margin: 10px 0;
+    }
+}
+@media only screen and(min-width:100px) and(max-width:480px){
+    .heading{
+        &--h1,&--h2{
+            font-size: 28px;
+        }
+        &--h3{
+            font-size: 12px;
+            margin: 10px 0;
+        }
+    }
+    .colorBlue{
+        font-size: 38px;
+    }
+    .textBox{
+        font-size: 12px;
+        line-height: 20px;
+        margin: 20px 15px;
+        &--darker{
+            line-height: 20px;
+            font-size: 12px;
+            margin: 20px 40px;
+        }
+    }
+}
+@media only screen and(min-width:481px) and(max-width:768px){
+    .heading{
+        &--h1,&--h2{
+            font-size: 34px;
+        }
+        &--h3{
+            font-size: 14px;
+        }
+    }
+    .colorBlue{
+        font-size: 45px;
+    }
+    .textBox{
+        &--darker{
+            margin: 15px 40px;
+        }
+    }
+}
+@media only screen and(min-width:100px) and(max-width:768px){
+    .textBoxResponsive{
+        display: block;
+    }
+}
+@media only screen and(min-width:480px) and(max-width:1149px){
+    .textBox{
+        margin: 20px 60px;
+        &--darker{
+            margin: 20px 60px;
+        }
+    }
+}

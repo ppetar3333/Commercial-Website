@@ -1,0 +1,22 @@
+.creativity{
+    text-align: center;
+    @include centerGrid;
+    .heading{
+        &--h2{
+            color: $orange2;
+        }
+    }
+    .textBoxCreativity{
+        max-width: 850px;
+        margin: 20px;
+    }
+}
+.creativitySection{
+    height: 546px;
+    @include centerFlexBox;
+}
+@media only screen and(max-width: 1150px){
+    .creativitySection{
+        height: 426px;
+    }
+}

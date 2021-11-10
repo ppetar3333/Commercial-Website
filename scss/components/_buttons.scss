@@ -1,0 +1,41 @@
+.button{
+    padding: 10px;
+    &--orange{
+        background: $orange2;
+        color: $white_color2;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    &--orange, &--blue{
+        padding: 15px 25px;
+    }
+    &--blue{
+        background: $blue4;
+        border-radius: 25px;
+        color: $white_color2;
+        text-transform: none;
+    }
+    &--white{
+        background: $white_color2;
+        color: $blue6;
+        border-radius: 5px;
+        padding: 15px 25px;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    &--inInput{
+        background: $white_color3;
+        color: $blue9;
+    }
+}
+.button, .buttonReadMore{
+    cursor: pointer;
+    border: none;
+}
+.buttonReadMore{
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    color: $gray4;
+}

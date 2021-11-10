@@ -1,0 +1,128 @@
+.lapTopSection{
+    @include centerGrid;
+}
+.lapTopDiv{
+    .headerSideTitle{
+        text-align: center;
+    }
+    .textBoxInLapTop{
+        text-align: center;
+        position: relative;
+        &__lapTop{
+            width: 85%;
+        }
+        &__heading{
+            position: absolute;
+            font-size: 13px;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%,-10%);
+        }
+        &__firstParagraph{
+            font-size: 11px;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%,-25%);        
+        }
+        &__signature{
+            width: 10%;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-45%);  
+        }
+        &__secondParagraph{
+            font-size: 12px;
+            color: $black;
+            font-style: italic;
+            width: 100%;
+            padding: 20px 0;
+        }
+        .button{
+            font-size: 11px;
+        }
+    }
+}
+@media only screen and(max-width:500px){
+    .lapTopSection{
+        height: 487px;
+    }
+}
+@media only screen and(min-width:500px){
+    .lapTopSection{
+        height: 700px;
+    }
+}
+@media only screen and(min-width:768px){
+    .headerSideTitle{
+        span{
+            font-size: 56px;
+        }
+    }
+}
+@media only screen and(min-width:800px){
+    .lapTopSection{
+        height: 834px;
+    }
+}
+@media only screen and (min-width: 1100px){
+    .lapTopDiv{
+        .headerSideTitle{
+            transform: rotate(-90deg);
+            position: absolute;
+            margin-top: 170px;
+            span{
+                font-size: 56px;
+            }
+        }
+        .textBoxInLapTop{
+            .textDiv{
+                margin-top: -20px;
+            }
+            &__signature{
+                top: 63%;
+            }
+            &__firstParagraph{
+                font-size: 18px;
+                width: 50%;
+                top: 30%;
+            }  
+            &__secondParagraph{
+                width: 50%;
+                color: $white_color;
+                font-size: 18px;
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%,-45%);
+            }
+            &__heading{
+                font-size: 24px;
+                width: 30%;
+                top: 15%;
+            }
+            .button{
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%,-80%);
+            }
+        }
+    }
+}
+@media only screen and(min-width:768px) and(max-width: 1150px){
+    .lapTopDiv{
+        .textBoxInLapTop{
+            &__firstParagraph{
+                font-size: 21px;
+            }       
+            &__heading{
+                font-size: 26px;
+            }
+            &__secondParagraph{
+                font-size: 21px;
+            }
+        }
+    }
+}

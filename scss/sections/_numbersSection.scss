@@ -1,0 +1,31 @@
+.numbersSection{
+    background: $light_brown;
+    height: 292px;
+    @include centerGrid;
+}
+.numbers{
+    @include centerFlexBox;
+    .number{
+        margin: 0 70px;
+        text-align: center; 
+        &__h3{
+            font-size: 48px;
+            font-weight: lighter;
+            color: $dark_brown;
+        }
+    }
+}
+@media only screen and(max-width: 1100px){
+    .numbersSection{
+        height: 453px;
+    }
+    .numbers{
+        display: block;
+        .number{
+            margin: 35px 0;
+            &__h3{
+                font-size: 38px;
+            }
+        }
+    }
+}

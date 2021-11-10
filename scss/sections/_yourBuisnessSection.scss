@@ -1,0 +1,104 @@
+.yourBuisnessSection{
+    background: $light_orange;
+    @include centerGrid;
+    position: relative;
+}
+.yourBuisness{
+    @include centerFlexBox;
+    flex-direction: row;
+    .slide{
+        img{
+            width: 500px;
+            height: 450px;
+            margin-left: 50px;
+        }
+    }
+    .current_slide_photo{
+        display: block;
+    }
+    .slide_two, .slide_three, .slide_four{
+        display: none;
+    }
+    .slider{
+        .disabled {
+            pointer-events: none;
+        }
+        &__arrows{
+            @include centerFlexBox;
+        }
+        .divider{
+            width: 580px;
+        }
+        &__button{
+            background: none;
+            margin-top: -400px;
+            &--left, &--right{
+                img{
+                    width: 35%;
+                }
+            }
+            &--left{
+                transform: rotate(180deg);
+            }
+        }
+        &__navigatorDots {
+            @include centerFlexBox;
+            padding: 17px;
+        }
+        &__dots {
+          background: $light_orange3;
+          width: 8px;
+          height: 8px;
+          margin-right: 15px;
+          margin-top: 20px;
+          border-radius: 50%;
+        }
+        .current_slide_dots {
+            background: $orange;
+        }
+    }
+}
+@media only screen and(max-width:1150px){
+    .yourBuisness{
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+}
+@media only screen and(min-width:200px) and(max-width:768px){
+    .yourBuisnessSection{
+        height: 484px;
+    }
+    .yourBuisness{
+        .slide{
+            img{
+                width: 60%;
+                height: 50%;
+                margin-left: 0;
+            }
+        }
+        .slider{
+            .divider{
+                width: 90%;
+            }
+            &__button{
+                margin-top: -190px;
+            }
+            &__dots {
+                margin: 5px 5px;
+            }
+        }
+        .textBoxYourBuisness{
+            display: none;
+        }
+    }
+}
+@media screen and(min-width:420px) and(max-width:768px){
+    .yourBuisnessSection{
+        height: 650px;
+    }
+}
+@media screen and(min-width:769px){
+    .yourBuisnessSection{
+        height: 790px;
+    }
+}

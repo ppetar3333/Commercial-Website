@@ -1,0 +1,53 @@
+.firstFooter{
+    background: $nav1;
+    @include centerFlexBox;
+    height: 583px;
+    .container{
+        display: flex;
+    }
+    .row{
+        flex-direction: column;
+        display: flex;
+    }
+    &__social{
+        padding: 40px 0;
+        &--items{
+            padding-right: 20px;
+        }
+    }
+    .tel, .fax{
+        padding: 5px 0;
+    }
+    .tel{
+        padding-top: 55px;
+    }
+    .fax{
+        padding-bottom: 30px;
+    }
+    .items{
+        padding: 0 0 28px 150px;
+    }
+    @media only screen and (max-width: 1150px){
+        height: 798px;
+        text-align: center;
+        .row{
+            padding: 10px 0;
+        }
+        .container{
+            display: block;
+        }
+        .items{
+            padding: 0 0 10px 0;
+        }
+        &__social{
+            padding: 20px 0 30px 0;
+        }
+        &__logo{
+            width: 200px;
+            text-align: center;
+        }
+        .tel{
+            padding-top: 30px;
+        }
+    }
+}
